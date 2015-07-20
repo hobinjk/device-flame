@@ -20,7 +20,8 @@ BOARD_USBIMAGE_PARTITION_SIZE_KB :=
 ENABLE_LIBRECOVERY := true
 RECOVERY_EXTERNAL_STORAGE := /storage/sdcard0
 
-TARGET_PROVIDES_INIT_RC := false
+# gonk-misc defines this anyway
+TARGET_PROVIDES_INIT_RC := true
 
 # hack to prevent llvm from building
 BOARD_USE_QCOM_LLVM_CLANG_RS := true
